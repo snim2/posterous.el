@@ -1,0 +1,49 @@
+posterous.el is an Emacs mode for posting to posterous.com blogs.
+
+Maintainer: Sarah Mount snim2@snim2.org
+Author: Sarah Mount snim2@snim2.org
+Version: 0.1
+Created: 14 May 2010
+Keywords: posterous blog 
+License: GPL (v2)
+
+It currently supports posting text (only) to posterous.
+
+Place the .el file somewhere on you load path (e.g. ~/.emacs.d/) and
+set the following variables in your .emacs or init.el file:
+
+posterous-email    -- your email address or username on posterous.com
+posterous-password -- your password on posterous.com
+
+and you can interact with posterous.com using the functions:
+
+M-x posterous-getsites
+-- places a list of sites that you own on posterous.com. 
+-- Includes siteids.
+-- Currently still formatted as XML.
+
+M-x posterous-region
+-- post a region of text to posterous
+
+M-x posterous-region-private
+-- post a region of text to posterous as a private post.
+
+M-x posterous-buffer
+-- post a buffer of text to posterous.
+
+M-x posterous-buffer-private
+-- post a buffer of text to posterous as a private post.
+
+
+If you do not wish to post to your default posterous site, you can
+customise the variable:
+
+posterous-default-siteid
+
+to discover the siteids of all your sites, use M-x posterous-getsites.
+
+If you do not wish to autopost to your social networks connected to
+your posterous.com account, place the following in your Emacs
+configuration file:
+
+(setq posterous-suppress-autopost)
