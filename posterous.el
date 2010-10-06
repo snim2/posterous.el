@@ -122,6 +122,15 @@
 (defconst posterous-result-buffer "*posterous*"
   "Buffer name for copying responses from posterous.com.")
 
+(defun posterous-newpost () 
+  "Create a new post with a nice markdown template and put into markdown mode"
+  (interactive) 
+  ;(setq title (read-from-minibuffer "Post title: "))
+  (switch-to-buffer (get-buffer-create "New Post"))
+  (markdown-mode)
+  (insert "<markdown>\n\n</markdown>")
+  (previous-line))
+
 
 (defun posterous-getsites ()
   "Get a list of sites owned by this user."
