@@ -149,7 +149,7 @@
   "Post a whole buffer to posterous."
   (interactive)
   (save-excursion
-	(posterous-region (point-min) (point-max) "0" "")))
+	(posterous-region (point-min) (point-max))))
 
 
 (defun posterous-buffer-private ()
