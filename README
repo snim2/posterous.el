@@ -2,7 +2,7 @@ posterous.el is an Emacs mode for posting to posterous.com blogs.
 
 Maintainer: Sarah Mount snim2@snim2.org
 Author: Sarah Mount snim2@snim2.org
-Version: 0.1
+Version: 0.2
 Created: 14 May 2010
 Keywords: posterous blog 
 License: GPL (v2)
@@ -33,6 +33,9 @@ M-x posterous-buffer
 
 M-x posterous-buffer-private
 -- post a buffer of text to posterous as a private post.
+
+M-x posterous-new-markdown-post 
+-- Create a new post with a nice markdown template and put into markdown mode.
 
 
 If you do not wish to post to your default posterous site, you can
