@@ -4,7 +4,6 @@
 
 ;; Maintainer: Sarah Mount <snim2@snim2.org>
 ;; Author: Sarah Mount <snim2@snim2.org>
-;;         Jonas Bernoulli <jonasbernoulli@gmail.com>
 ;;         zanoni https://github.com/zanoni
 ;;         Tim Disney <tim.disney@gmail.com>
 ;; Version: 0.2
